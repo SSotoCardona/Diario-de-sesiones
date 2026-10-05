@@ -71,7 +71,7 @@ input {
   background: #fbfaf7;
 }
 
-button {
+#formulario button {
   width: 100%;
   margin-top: 18px;
   padding: 12px;
@@ -84,7 +84,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#formulario button:hover {
   background: #c93e14;
 }
 
@@ -95,8 +95,38 @@ button:hover {
 }
 
 .sesion {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 12px;
   padding: 12px 0;
   border-top: 1px solid #eeeae3;
+}
+
+.sesion-fecha,
+.sesion-tema,
+.sesion-minutos {
+  grid-column: 1;
+}
+
+.borrar {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  align-self: center;
+  padding: 8px 12px;
+  border: 1px solid #d7d3cb;
+  border-radius: 8px;
+  background: transparent;
+  color: #6b7280;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.borrar:hover {
+  background: #f8f1ee;
+  color: #c93e14;
+  border-color: #e24a1b;
 }
 
 .sesion:first-child {

@@ -130,11 +130,33 @@ function mostrarSesiones(sesiones) {
     minutos.className = "sesion-minutos";
     minutos.textContent = sesion.minutos + " minutos";
 
+    const borrar = document.createElement("button");
+    borrar.type = "button";
+    borrar.className = "borrar";
+    borrar.textContent = "Borrar";
+    borrar.addEventListener("click", function () {
+      borrarSesion(sesion.id);
+    });
+
     item.appendChild(fecha);
     item.appendChild(tema);
     item.appendChild(minutos);
+    item.appendChild(borrar);
     lista.appendChild(item);
   }
+}
+
+function borrarSesion(id) {
+  const acepta = window.confirm("¿Quieres borrar esta sesión?");
+  if (!acepta) {
+    return;
+  }
+
+  const sesiones = leerSesiones().filter(function (sesion) {
+    return sesion.id !== id;
+  });
+  guardarSesiones(sesiones);
+  pintarPantalla();
 }
 
 function pintarPantalla() {
