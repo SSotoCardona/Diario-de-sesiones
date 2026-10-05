@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+  background: #f3efe7;
+  color: #1f2933;
+  line-height: 1.5;
+}
+
+.contenedor {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.tarjeta {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 24px rgba(31, 41, 51, 0.06);
+}
+
+.racha {
+  text-align: center;
+}
+
+.racha-etiqueta {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.racha-numero {
+  margin: 4px 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.racha-texto {
+  margin: 0;
+  color: #6b7280;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d7d3cb;
+  border-radius: 10px;
+  font: inherit;
+  background: #fbfaf7;
+}
+
+button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #e24a1b;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c93e14;
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sesion {
+  padding: 12px 0;
+  border-top: 1px solid #eeeae3;
+}
+
+.sesion:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.sesion-fecha {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.sesion-tema {
+  margin: 2px 0 0;
+  font-weight: 600;
+}
+
+.sesion-minutos {
+  margin: 0;
+  color: #4b5563;
+}
+
+.vacio {
+  margin: 0;
+  color: #6b7280;
+}
